@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import "./contact.css";
 import { SiGmail, SiWhatsapp } from "react-icons/si";
+import { IoCall } from "react-icons/io5";
 import axios from "axios";
 import Loader from "../Loader/loader";
 import Toaster from "../Toaster/toaster";
@@ -76,6 +77,15 @@ export default function Contact() {
             I'll get back to you as soon as possible.
           </p>
           <div className="mail-div">
+
+          <a
+              href="tel:+916382409401"
+              rel="noopener noreferrer"
+            >
+              <button>
+                <IoCall size={20} />
+              </button>
+            </a>
             <a
               href="mailto:vigneshselvam504@gmail.com"
               target="_blank"
