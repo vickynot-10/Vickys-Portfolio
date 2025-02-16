@@ -1,0 +1,195 @@
+#nav-bar-container {
+    width: 100%;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0px;
+    
+    transition: background-color 0.3s ease-in-out;
+    z-index: 999;
+
+}
+
+#mobile-nav-div {
+    display: none;
+}
+
+.navbar-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-wrapper>div:nth-child(1) h1 {
+    color: var(--font-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.navbar-wrapper>div:nth-of-type(2) a {
+    color: var(--font-color);
+    padding: 0px 12px;
+    font-size: clamp(1rem, 1.15rem, 1.50rem);
+    font-weight: 400;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+}
+
+.navbar-wrapper>div:nth-of-type(2) a.active {
+    position: relative;
+    color: var(--font-color);
+}
+
+
+.navbar-wrapper>div:nth-of-type(2) a.active::before {
+    content: ' ';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    display: inline;
+    width: 0%;
+    height: 2px;
+    background-color: var(--font-color);
+    transform: translate(-50%, 0);
+    animation: widthAnimation 0.3s linear forwards;
+}
+
+@keyframes widthAnimation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+
+}
+
+.navbar-wrapper>div:nth-of-type(3) button {
+    margin: 0px 12px;
+    background-color: transparent;
+    border: unset;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.15rem, 1.50rem);
+    outline: none;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+
+
+
+#toggle-mode-btn {
+    position: relative;
+
+}
+.nav-links{
+    display: flex;
+}
+
+
+
+
+
+/*NAV BAR */
+@media screen and (max-width : 975px) {
+    
+    #mobile-nav-div{
+        display: block;
+        position: absolute;
+        right: 0%;
+        background-color: transparent;
+        border: unset;
+        outline: none;
+        cursor: pointer;
+        z-index:400;
+        font-weight: 400;
+        font-size: clamp(1rem, 1.15rem, 1.50rem);
+        color: var(--font-color);
+        
+        transition: all 0.5s ease-in-out;
+    }
+    #mobile-nav-div.rotate-x{
+        transform: rotate(360deg);
+    }
+    #mobile-nav-div.rotate-ham{
+        transform: rotate(0deg);
+    }
+
+    .navbar-wrapper {
+        position: relative;
+        justify-content: unset;
+    }
+    .nav-links{
+        position: fixed;
+        right: -120%;
+        padding: 50px 80px 0 30px;
+        height: 100%;
+        z-index: 200;
+        top: 0px;
+        overflow: hidden;
+        background-color: var(--mobile-nav-bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: right 0.5s ease-in-out;
+        
+    }
+    .mobile-links {
+        position: fixed;
+        right: 0px;
+        padding: 50px 80px 0 30px;
+        height: 100%;
+        z-index: 200;
+        top: 0px;
+        overflow: hidden;
+        background-color: var(--mobile-nav-bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: right 0.5s ease-in-out;
+
+    }
+  
+    
+    .mobile-links > a,.nav-links > a{
+        margin: 20px 0;
+    }
+
+    .navbar-wrapper>div:nth-of-type(2) a.active::before {
+        content: unset;
+    }
+    .navbar-wrapper>div:nth-of-type(3){
+        position: absolute;
+        right: 12%;
+        transform: translateX(-12%);
+    }
+}
+
+@media screen and (max-width : 440px) {
+    .navbar-wrapper>div:nth-of-type(3) button{
+        margin: 0px 6px;
+    }
+    .navbar-wrapper>div:nth-child(1) h1{
+        font-size: var(--primary-text-size-sm);
+    }
+    
+}
+@media screen and (min-width : 441px) and (max-width : 768px) {
+    .navbar-wrapper>div:nth-child(1) h1{
+        font-size: var(--primary-text-size-md);
+    }
+    
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+    .navbar-wrapper>div:nth-child(1) h1{
+        font-size: var(--primary-text-size-lg);
+    }
+    
+}

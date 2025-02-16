@@ -1,0 +1,97 @@
+#about-container{
+    width: 100%;
+}
+.about-wrapper{
+    width: 80%;
+    margin: auto;
+}
+.about-wrapper>p:nth-child(1) {
+    color: var(--font-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 0px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.about-wrapper>p:nth-child(2) {
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: 1.7em;
+}
+.about-wrapper:nth-of-type(2) > p:nth-child(2){
+    color: var(--font-light-white);
+    font-size: 16px;
+    line-height: 1.7em;
+}
+#skills-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#skills-container > div{
+
+    width:  140px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--border-divider-color);
+    box-shadow: var(--box-border-shadow);
+    outline: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#skills-container > div span{
+    color: var(--font-color);
+    margin: 0px 6px;
+    font-size: var(--font-size);
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width : 440px) {
+    
+    .about-wrapper>p:nth-child(1) {
+        font-size: var(--primary-text-size-sm);
+    }
+    .about-wrapper>p:nth-child(2),#skills-container > div span{
+        font-size:clamp(0.90rem,1rem,1.10rem);
+    }
+    #skills-container > div svg{
+        height: 16px;
+        width: 16px;
+    }
+    #skills-container > div{
+        width: 120px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width : 441px) and (max-width : 768px) {
+    .about-wrapper>p:nth-child(1) {
+        font-size: var(--primary-text-size-md);
+    }
+    .about-wrapper>p:nth-child(2),#skills-container > div span{
+        font-size:clamp(0.90rem,1rem,1.10rem);
+    }
+
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+    .about-wrapper>p:nth-child(1) {
+        font-size: var(--primary-text-size-lg);
+    }
+    .about-wrapper>p:nth-child(2),#skills-container > div span{
+        font-size:clamp(0.90rem,1rem,1.10rem);
+    }
+
+}
