@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes,Route } from "react-router-dom";
+import { Routes,Route,Navigate } from "react-router-dom";
 
 import Home from "./Components/Home/home.jsx";
 import NavBar from "./Components/NavBar/navbar.jsx";
@@ -24,6 +24,7 @@ export function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
          <Contact /> 
         </ContextProvider>
