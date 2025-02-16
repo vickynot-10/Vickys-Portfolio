@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useNav } from "../../Contexts/navContext";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const roles = [
@@ -40,12 +41,10 @@ export default function Home() {
           </span>
         </p>
         <div>
-          <a
-            style={{  scrollBehavior: "smooth" }}
-            href="#contact-container"
+          <Link to='/contact'
           >
             <button>Contact me</button>
-          </a>
+          </Link>
           <a
             target="_blank"
             href="https://github.com/vickynot-10"

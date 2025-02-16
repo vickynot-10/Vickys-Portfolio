@@ -24,9 +24,9 @@ export function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact /> } />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-         <Contact /> 
         </ContextProvider>
     </div>
   );

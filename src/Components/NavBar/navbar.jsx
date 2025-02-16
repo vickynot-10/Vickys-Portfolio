@@ -69,6 +69,13 @@ export default function NavBar() {
           >
             Projects
           </Link>
+          <Link
+            to="/contact"
+            onClick={() => changeNavClass("contact")}
+            className={navValue === "contact" ? "active" : " "}
+          >
+            Contact
+          </Link>
         </div>
       
         <div>

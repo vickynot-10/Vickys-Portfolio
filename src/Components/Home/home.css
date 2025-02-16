@@ -179,7 +179,7 @@
 
     .home-wrapper>p:nth-child(2),
     .home-wrapper>p:nth-child(3) {
-        font-size: clamp(1rem, 1.10rem, 2rem);
+        font-size: clamp(1rem, 1.25rem, 2rem);
     }
 
     .home-wrapper div {
@@ -201,7 +201,7 @@
 
 
     .home-wrapper div a:not(:nth-child(1)) button {
-        margin-top: 20px;
+        margin:20px 0 0 0;
         justify-self: center;
     }
 

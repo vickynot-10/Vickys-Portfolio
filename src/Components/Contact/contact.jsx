@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./contact.css";
 import { SiGmail, SiWhatsapp } from "react-icons/si";
 import axios from "axios";
 import Loader from "../Loader/loader";
 import Toaster from "../Toaster/toaster";
-
+import { useNav } from "../../Contexts/navContext";
 export default function Contact() {
+  const { setnavValue } = useNav();
+  useEffect(() => {
+    setnavValue("contact");
+  }, []);
   const [isLoading, setLoading] = useState(false);
   const [resObj, setResObj] = useState({
     isSent: false,

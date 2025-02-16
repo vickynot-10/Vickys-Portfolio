@@ -1,5 +1,5 @@
 
-import ResumePDF from './Vignesh-Full-Stack-dev.pdf';
+import ResumePDF from './Vignesh-Software-dev.pdf';
 import FoodImg from "./Project-Pictures/Food-order-Main.jpg";
 import SkullImg from "./Project-Pictures/Skull-Thumbnail.jpg";
 
