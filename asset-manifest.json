@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Vickys-Portfolio/static/css/main.a13b99cf.css",
-    "main.js": "/Vickys-Portfolio/static/js/main.179226ba.js",
+    "main.js": "/Vickys-Portfolio/static/js/main.0c51e7f0.js",
     "static/js/453.11d7c25d.chunk.js": "/Vickys-Portfolio/static/js/453.11d7c25d.chunk.js",
     "static/media/Vignesh-Full-Stack-dev.pdf": "/Vickys-Portfolio/static/media/Vignesh-Full-Stack-dev.f8f71691e2fcafe77dfe.pdf",
     "static/media/Food-order-Main.jpg": "/Vickys-Portfolio/static/media/Food-order-Main.f61a9d6f6da0caac6f32.jpg",
     "static/media/Skull-Thumbnail.jpg": "/Vickys-Portfolio/static/media/Skull-Thumbnail.d1561f9b41f4b7973d41.jpg",
     "index.html": "/Vickys-Portfolio/index.html",
     "main.a13b99cf.css.map": "/Vickys-Portfolio/static/css/main.a13b99cf.css.map",
-    "main.179226ba.js.map": "/Vickys-Portfolio/static/js/main.179226ba.js.map",
+    "main.0c51e7f0.js.map": "/Vickys-Portfolio/static/js/main.0c51e7f0.js.map",
     "453.11d7c25d.chunk.js.map": "/Vickys-Portfolio/static/js/453.11d7c25d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a13b99cf.css",
-    "static/js/main.179226ba.js"
+    "static/js/main.0c51e7f0.js"
   ]
 }
