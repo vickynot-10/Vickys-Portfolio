@@ -41,10 +41,14 @@ export default function NavBar() {
         <div>
           <h1>Vignesh</h1>
         </div>
-        <button id="mobile-nav-div" onClick={ToggleNavBar} className={isMobileNav ? "rotate-x" : "roate-ham"} >{isMobileNav ? <IoClose /> : <IoMenuSharp />  }</button>
+        <button id="mobile-nav-div" onClick={ToggleNavBar} className= {isMobileNav ? "rotate-x" : "roate-ham"}
+        aria-label={isMobileNav ? "Close Navigation" : "Open Navigation"} 
+
+        >{isMobileNav ? <IoClose /> : <IoMenuSharp />  }</button> 
           
         <div className={isMobileNav ? "mobile-links " : "nav-links"}>
           <Link
+          aria-label="Go to Homepage"
             to="/"
             onClick={() => changeNavClass("home")}
             className={navValue === "home" ? "active" : " "}
@@ -53,17 +57,21 @@ export default function NavBar() {
           </Link>
           <Link
             to="/about"
+          aria-label="Go to About section"
             onClick={() => changeNavClass("about")}
             className={navValue === "about" ? "active" : " "}
           >
             About Me
           </Link>
-          <Link to="/experience" onClick={() => changeNavClass("experience")} 
+          <Link to="/experience" 
+          aria-label="Go to Experience Section"
+          onClick={() => changeNavClass("experience")} 
           className={navValue === "experience" ? "active" : " "} >
             Experience
           </Link>
           <Link
             to="/projects"
+          aria-label="Go to Project sections"
             onClick={() => changeNavClass("projects")}
             className={navValue === "projects" ? "active" : " "}
           >
@@ -71,6 +79,7 @@ export default function NavBar() {
           </Link>
           <Link
             to="/contact"
+          aria-label="Go to Contact me section"
             onClick={() => changeNavClass("contact")}
             className={navValue === "contact" ? "active" : " "}
           >
@@ -83,6 +92,7 @@ export default function NavBar() {
             type="button"
             onClick={ToggleMode}
             id="toggle-mode-btn"
+            aria-label={ isLight ? "Switch to night mode" : "Switch to light mode" }
             className={isLight ? "WhitemoonAnimate" : "darkmoonAnimate"}
           >
             {isLight ? <IoMoonOutline /> : <IoIosSunny />}
@@ -90,14 +100,15 @@ export default function NavBar() {
 
           <a
             href={assestObj.Resume}
+            aria-label="Download Resume"
             download="Vignesh-Resume"
             style={{
               textDecoration: "none",
             }}
           >
-            <button>
+          
               <RiDownloadLine />
-            </button>
+        
           </a>
         </div>
       </div>

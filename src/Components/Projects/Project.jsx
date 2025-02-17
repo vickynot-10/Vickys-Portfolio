@@ -14,7 +14,7 @@ export default function Project() {
       projectImg: assestObj.FoodProjectImg,
       projectName: "Food Order Web Application",
       projectDesc:
-        "Developed a MERN Stack Food Order application with JWT Authentication for secure user access.Implemented Search, Cart and Checkout functionalities with Order history.",
+        "Developed a MERN Stack Food Order application with JWT Authentication for secure user access. Implemented Search, Cart and Checkout functionalities with Order history.",
       projectYear: "2024",
       projectTools: "MERN Stack",
       projectCodeLink: "https://github.com/vickynot-10/Food-Order-",
@@ -24,10 +24,10 @@ export default function Project() {
         "Designed and implemented a responsive user interface ensuring seamless user experience across various devices.",
         "Integrated <strong> Real-time geolocation tracking </strong> to fetch user's current locations.",
         "Designed a<strong> Search feature </strong> enabling users to find food items or restaurants efficiently.",
-        "Enabled <strong> Order history tracking </strong>, Allowing users to view past purchases.",
+        "Enabled <strong> Order history tracking</strong>, Allowing users to view past purchases.",
         "Integrated MongoDB database to manage menu items, user profiles, and order histories efficiently.",
-        "Implemented <strong>JWT user authentication </strong> for secure login and registration.",
-        "Improved application performance by compressing images,<strong> Implementing lazy loading </strong>on images and necessary components , resulting in faster load times and a smoother user experience.",
+        "Implemented <strong>JWT user authentication</strong> for secure login and registration.",
+        "Improved application performance by compressing images,<strong> Implementing lazy loading </strong>on images and necessary components, resulting in faster load times and a smoother user experience.",
       ],
     },
 
@@ -41,11 +41,11 @@ export default function Project() {
       projectCodeLink: "https://github.com/vickynot-10/SkullCandy-completed",
       projectLiveLink: "https://skullcandy-completed.onrender.com/",
       projectDetailsArr: [
-        " Developed a Full-stack Skullcandy clone website using HTML, CSS, JavaScript,TailwindCSS for frontend and Node.js with Express.js for Backend incorporating JWT authentication for secure user sessions.",
+        " Developed a Full-stack Skullcandy clone website using HTML, CSS, JavaScript, TailwindCSS for frontend and Node.js with Express.js for Backend incorporating JWT authentication for secure user sessions.",
         " Developed and integrated <strong> RESTful APIs</strong> for seamless communication between the frontend and backend services.",
         " Integrated a MongoDB database to store user profiles for Authentication, Login management and Profile creations.",
         " Built a <strong>Responsive UI</strong> with TailwindCSS, Ensuring Smooth user experiences across variety of devices",
-        "Implemented <strong>JWT user authentication </strong> for secure login and registration."
+        "Implemented <strong>JWT user authentication </strong> for secure login and registration.",
       ],
     },
   ];
@@ -71,7 +71,7 @@ export default function Project() {
               <>
                 <div className="project-card" key={ind}>
                   <div>
-                    <img src={item.projectImg} alt="project-img" />
+                    <img src={item.projectImg} alt={`project-img-${ind + 1}`} />
                   </div>
                   <div>
                     <p>{item.projectName}</p>
@@ -88,6 +88,7 @@ export default function Project() {
                     {item.projectLiveLink && item.projectCodeLink && (
                       <div>
                         <a
+                          aria-label={`${item.projectName} Live Link `}
                           href={item.projectLiveLink}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -95,6 +96,7 @@ export default function Project() {
                           Live Link
                         </a>
                         <a
+                          aria-label={`${item.projectName} Github Code Link `}
                           href={item.projectCodeLink}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -122,11 +124,12 @@ export default function Project() {
                         );
                       })}
                     </ul>
-                    <button onClick={() => ToggleView(ind)}>
+                    <button onClick={() => ToggleView(ind)} aria-label={viewDetails === ind ? "Read Less about project" : "Read More  about project" } >
                       {viewDetails === ind ? "Read Less..." : "Read More..."}
                     </button>
                   </div>
                 )}
+                <hr className="separation-dots" />
               </>
             );
           })}

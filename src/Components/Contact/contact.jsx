@@ -81,42 +81,45 @@ export default function Contact() {
           <a
               href="tel:+916382409401"
               rel="noopener noreferrer"
+              aria-label="Call me"
             >
-              <button>
                 <IoCall size={20} />
-              </button>
             </a>
             <a
               href="mailto:vigneshselvam504@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Mail Me"
             >
-              <button>
+         
                 <SiGmail size={20} />
-              </button>
+           
             </a>
             <a
               href="https://wa.me/916382409401?text=Hello%20There!"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Whatsapp me"
             >
-              <button>
+        
                 <SiWhatsapp size={20} />
-              </button>
+      
             </a>
           </div>
         </div>
         <div>
           <form onSubmit={FormSubmit}>
-            <input type="text" name="name" placeholder="Name" required autoComplete="off" />
-            <input type="email" name="email" required placeholder="E-mail" autoComplete="off" />
+
+            <input type="text" name="name" placeholder="Name" aria-label="Name" required autoComplete="off" id="username" />
+            <input type="email" name="email" aria-label="E-Mail" required placeholder="E-mail" autoComplete="off" id="usermail" />
             <textarea
+            aria-label="Message"
               name="message"
               required
               placeholder="Your Message"
               rows={5}
             ></textarea>
-            <button type="submit" disabled={isLoading}>
+            <button type="submit" disabled={isLoading} aria-label="Submit Form" >
               {isLoading ? <Loader size={20} color="black" /> : "Submit"}
             </button>
           </form>

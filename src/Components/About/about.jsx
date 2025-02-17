@@ -1,5 +1,5 @@
 import "./about.css";
-import { useEffect,useState } from "react";
+import { useEffect } from "react";
 import {
   RiReactjsFill,
   RiNodejsFill,
@@ -9,6 +9,7 @@ import {
   RiBootstrapFill,
   RiTailwindCssFill,
   RiGithubFill,
+  RiPhpFill
 } from "react-icons/ri";
 import { SiExpress, SiPython, SiMysql, SiMongodb } from "react-icons/si";
 import { useNav } from "../../Contexts/navContext";
@@ -49,6 +50,10 @@ export default function AboutMe() {
       skillLogo: <SiExpress color="#868F98" size={25} />,
     },
     {
+      skillName : "PHP",
+      skillLogo : <RiPhpFill color="#8E5A9B" />
+    },
+    {
       skillName: "MongoDB",
       skillLogo: <SiMongodb color="#47A248" size={25} />,
     },
@@ -64,9 +69,9 @@ export default function AboutMe() {
       <div className="about-wrapper">
         <p>About Me</p>
         <p>
-          Hey , I'm Vignesh ,A passionate developer dedicated to life-long
+          Hey, I'm Vignesh, A passionate developer dedicated to life-long
           learning, I’m a full stack developer with a deep passion for
-          JavaScript, React and web development . The blend of creativity,
+          JavaScript, React and web development.The blend of creativity,
           logic, technology - along with the endless opportunities to learn and
           keeps me inspired and excited to build seamless digital experiences.
         </p>
@@ -75,7 +80,7 @@ export default function AboutMe() {
         <p>My Skills</p>
         <p>
           I love learning and exploring new technologies and improving my
-          skills. For now , I'm good at the following :
+          skills. For now, I'm good at the following :
         </p>
 
         <div id="skills-container">
