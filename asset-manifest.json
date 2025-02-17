@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Vickys-Portfolio/static/css/main.ad19cb6e.css",
-    "main.js": "/Vickys-Portfolio/static/js/main.daeb4ff4.js",
+    "main.css": "/Vickys-Portfolio/static/css/main.2d18d744.css",
+    "main.js": "/Vickys-Portfolio/static/js/main.14e271b7.js",
     "static/js/453.11d7c25d.chunk.js": "/Vickys-Portfolio/static/js/453.11d7c25d.chunk.js",
     "static/media/Vignesh-Software-dev.pdf": "/Vickys-Portfolio/static/media/Vignesh-Software-dev.cc402b6aaaa291a87854.pdf",
     "static/media/Food-order-Main.jpg": "/Vickys-Portfolio/static/media/Food-order-Main.f61a9d6f6da0caac6f32.jpg",
     "static/media/Skull-Thumbnail.jpg": "/Vickys-Portfolio/static/media/Skull-Thumbnail.d1561f9b41f4b7973d41.jpg",
     "index.html": "/Vickys-Portfolio/index.html",
-    "main.ad19cb6e.css.map": "/Vickys-Portfolio/static/css/main.ad19cb6e.css.map",
-    "main.daeb4ff4.js.map": "/Vickys-Portfolio/static/js/main.daeb4ff4.js.map",
+    "main.2d18d744.css.map": "/Vickys-Portfolio/static/css/main.2d18d744.css.map",
+    "main.14e271b7.js.map": "/Vickys-Portfolio/static/js/main.14e271b7.js.map",
     "453.11d7c25d.chunk.js.map": "/Vickys-Portfolio/static/js/453.11d7c25d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad19cb6e.css",
-    "static/js/main.daeb4ff4.js"
+    "static/css/main.2d18d744.css",
+    "static/js/main.14e271b7.js"
   ]
 }
